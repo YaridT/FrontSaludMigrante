@@ -90,7 +90,7 @@ export class RequestComponent implements OnInit {
                   if (data.isRegistered == true) {
                     if (data.migrantsStatementsFile == "") {
                       this.cleanMessage();
-                      // console.log("no esta afiliado al sisben", data);
+                       //console.log("no esta afiliado al sisben", data);
                       this.errorMessage = 'No se encontraron resultados. No se encuentra encuestado al SISBEN en Bogotá';
                       this.openSnackBar(this.errorMessage);
                       this.cardResponse = false;
@@ -106,7 +106,7 @@ export class RequestComponent implements OnInit {
                     }
                   } else {
                     this.cleanMessage();
-                    //console.log("no esta afliado ", data);
+                   console.log("no esta afliado ", data, "*",this.addRequestForm);
                     this.errorMessage = 'No se encontraron registros. No se encuentra afiliado al régimen subsidiado en Bogotá';
                     this.openSnackBar(this.errorMessage);
                     this.removeRecaptcha();
